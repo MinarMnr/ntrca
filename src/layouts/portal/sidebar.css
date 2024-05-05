@@ -1,0 +1,14 @@
+#banbeis_home {
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  /* padding: 20px 0 !important; */
+}
+
+#banbeis_home span {
+  margin-left: 15px;
+  color: #01579b;
+  font-size: 0.95rem;
+}

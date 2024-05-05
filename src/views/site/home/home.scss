@@ -1,0 +1,51 @@
+.apply button, .apply button:hover {
+    color: #ffffff;
+    background-color: #01579B;
+    border-color: #01579B;
+}
+.login h3 {
+    margin: 0 0 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #313131;
+    text-align: center;
+    font-weight: 800;
+    font-size: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+  }
+.gradient-text {
+    background-color: #CA4246;
+    background-image: linear-gradient(117deg, #01579b 16.666%, #E16541 16.666%, #E16541 33.333%, #F18F43 33.333%, #F18F43 50%, #ff8405 50%, #f37114 66.666%);
+    background-image: linear-gradient(117deg, #01579b 16.666%, #0572ff 16.666%, #005ea9 33.333%, #0050c7 33.333%, #0f7fd9 50%, #0c4fc1 50%, #0081e7 66.666%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+  }
+  @keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+  }
+  
+  
+  @keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+  }

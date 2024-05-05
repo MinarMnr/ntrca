@@ -1,0 +1,101 @@
+// core
+import * as React from 'react';
+import {Link} from "react-router-dom";
+// icons
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPlus} from "@fortawesome/free-solid-svg-icons";
+// components
+import {Button, Card} from "@themesberg/react-bootstrap";
+import {DefaultCard} from "../../components/card";
+import {BasicTable, BasicTableAction} from "../../components/table";
+// stylesheet
+import './Dashboard.scss'
+// mock data
+import data from "../../@core/data/transactions";
+
+const Dashboard = () => {
+
+	const cardProps = {
+		title: 'Country List',
+		headerSlot: () => (
+			<>
+				<Link to='/'  >
+					<Button variant="link" className="f-right btn-sm p-5">
+						<FontAwesomeIcon icon={faPlus} className="me-2"/> Add New Country
+					</Button>
+				</Link>
+			</>
+		)
+	};
+
+	const tableProps = {
+		headers: [
+			{id: 'id', label: '#'},
+			{id: 'countryName', label: 'Country Name'},
+			{id: 'countryNameBn', label: 'Country Name (Bn)'},
+			{id: 'countryIdLegacy', label: 'Country Id (Legacy)'},
+			{id: 'action', label: 'Action', width: '120px'}
+		],
+		perPage: [10, 20, 30, 40, 50],
+		config: {
+			operationId: 'country/list',
+			output: 'country'
+		}
+	};
+
+	const showData = (data) => {
+		alert(JSON.stringify(data));
+	};
+
+	const editData = (data) => {
+		alert(JSON.stringify(data));
+	};
+
+	const deleteData = (data) => {
+		alert(JSON.stringify(data));
+	};
+
+	return (
+		<DefaultCard className="mb-50" {...cardProps}>
+			<BasicTable {...tableProps}
+        onSizeChange={(value) => alert(value)}
+        onSearchKeyUp={(value) => alert(value)}
+			>
+				{data.map((row, rowIndex) => (
+					<tr key={rowIndex}>
+						<td>
+							<Card.Link as={Link} to="/" className="fw-normal">
+								1
+							</Card.Link>
+						</td>
+						<td>
+			          <span className="fw-normal">
+			            Test Test
+			          </span>
+						</td>
+						<td>
+			          <span className="fw-normal">
+			            Test Test
+			          </span>
+						</td>
+						<td>
+			          <span className="fw-normal">
+			            Test Test
+			          </span>
+						</td>
+						<td>
+							<BasicTableAction
+								onShowClick={() => showData(data)}
+								onEditClick={() => editData(data)}
+								onDeleteClick={() => deleteData(data)}
+							/>
+						</td>
+					</tr>
+				))}
+			</BasicTable>
+		</DefaultCard>
+	)
+
+};
+
+export default Dashboard;

@@ -1,0 +1,27 @@
+image: node:15
+
+cache:
+  paths:
+    - node_modules/
+
+stages:
+  - deploy
+
+before_script:
+  - mkdir -p ~/.ssh
+  - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+  - chmod 700 ~/.ssh/id_rsa
+  - eval "$(ssh-agent -s)"
+  - ssh-add <(echo "$SSH_PRIVATE_KEY")
+  - ssh-keyscan -H 'eatlbd.net' >> ~/.ssh/known_hosts
+  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+
+deploy:
+  stage: deploy
+  environment: Staging
+  only:
+    - staging
+  script:
+    - cd /home/banbeis/mpo-dshe-frontend 
+
+    - bash deploy.sh

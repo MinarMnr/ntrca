@@ -1,0 +1,38 @@
+.default-card-wrapper {
+  position: relative;
+}
+
+.default-card-content {
+  z-index: 1;
+}
+
+.default-card-loader {
+  position: absolute;
+  z-index: 9999999;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #ffffff;
+}
+
+.default-card-loader-icon {
+  position: absolute;
+  font-size: 30px;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%) translateX(-50%);
+  animation: spin infinite 0.8s linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

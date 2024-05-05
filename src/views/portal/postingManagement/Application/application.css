@@ -1,0 +1,60 @@
+.fontSize {
+    font-size: small;
+}
+
+.fontSizeHeader {
+    font-size: 14px;
+}
+
+.fontSizeBody {
+    font-size: 12px;
+}
+
+.f-size {
+    font-size: 15px;
+}
+
+.grabbing.card:hover {
+    cursor: pointer;
+}
+
+.grabbing {
+    background-color: #fff;
+    margin: 7px;
+    border-radius: 5px;
+    cursor: grabbing;
+    gap: 10px;
+    box-shadow: 3px 3px 16px rgb(0 0 0 / 20%);
+    box-shadow: 0 0.5rem 1rem rgb(46 54 80 / 15%) !important;
+    border: 0.0625rem solid #eaedf2 !important;
+    z-index: 99999999;
+}
+
+.effect {
+    margin: 0 !important;
+    overflow: visible;
+
+}
+.effect:hover {
+    z-index: 9999 !important;
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    background-color: #9fefff;
+}
+.grabbing.effect.dragEffect.card {
+    opacity: .9;
+    position: relative;
+    overflow: visible;
+    visibility: visible;
+  }
+.header-color h3 {
+    margin: 0;
+    line-height: 1;
+    padding: 6px;
+    background: linear-gradient(320deg, #1662aca3, #356eaceb);
+    color: white;
+    margin: 0 0 10px 0;
+    font-size: 1.15rem;
+    text-align: center;
+}

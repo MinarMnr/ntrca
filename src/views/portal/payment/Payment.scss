@@ -1,0 +1,57 @@
+.details-page .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+    width: 100%;
+}
+.details-page .card-head {
+    border-radius: 2px 2px 0 0;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+    padding: 2px;
+    /* text-transform: uppercase; */
+    color: #3a405b;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 40px;
+    min-height: 40px;
+}
+
+.card-head.payment {
+    color: #fff;
+    background-color: #01579b;
+    border-color: #01579b;
+    background: linear-gradient(90deg, #01579b, #3a6073);
+}
+.card-head.payment h2 {
+    color: #fff;
+    margin: auto;
+}
+.payment-card {
+    border-radius: 2px 2px 0 0;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+#payment h3 {
+    margin: 0;
+    line-height: 1;
+    padding: 6px;
+    background: linear-gradient(320deg, #1662aca3, #356eaceb)!important;
+    color: white;
+    // margin: 0 0 10px 0;
+    font-size: 1.15rem;
+    text-align: center;
+}
+.payment-card .table td {
+    width: 50%;
+}
+.payment-body{
+    top: calc(110px + 6%);
+    position:relative;
+}

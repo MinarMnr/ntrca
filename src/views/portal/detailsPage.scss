@@ -1,0 +1,39 @@
+.details {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    list-style: none;
+    line-height: 18px;
+    padding: 0 0 30px;
+}
+
+.details p {
+    width: 100%;
+    float: left;
+    background: #f7f7f7;
+    line-height: inherit;
+    list-style-type: none;
+}
+
+.details p span:first-child {
+    width: 50%;
+    float: left;
+    color: #404040;
+    font-weight: 600;
+    font-family: "Work Sans", Arial, Helvetica, sans-serif;
+}
+
+.details p span {
+    padding: 11px 20px;
+}
+
+.details p span:last-child {
+    width: 50%;
+    float: left;
+    color: #666;
+}
+
+.vhr {
+    border-right: 1px solid #666;
+    //height: 100%;
+}

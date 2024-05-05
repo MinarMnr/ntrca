@@ -1,0 +1,25 @@
+/**
+ * = Paginations
+ */
+.circle-pagination {
+  .page-link,
+  span {
+    @include display-flex();
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    @include border-radius($circle-radius);
+  }
+}
+.pagination {
+margin: 0;
+}
+.page-link {
+ font-size: $font-size-xs;
+}
+.page-link {
+  padding: 0.15rem 0.5rem;
+}
+

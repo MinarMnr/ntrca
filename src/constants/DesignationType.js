@@ -1,0 +1,4 @@
+export default {
+  GENERAL: "GENERAL",
+  ADMINISTRATIVE: "ADMINISTRATIVE",
+};

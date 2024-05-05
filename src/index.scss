@@ -1,0 +1,34 @@
+@import "@core/scss/volt";
+@import "@core/scss/_helper";
+
+//custom style sheet
+@import "./custom.scss";
+
+.sidebar-inner .accordion-button:not(.collapsed)::after {
+  background-image: url("assets/img/icons/arrow.svg") !important;
+  // transform: rotate(180deg);
+}
+
+.sidebar-inner .accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  margin-left: auto;
+  content: "" !important;
+  background-image: url("assets/img/icons/arrow.svg") !important;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+main {
+  // overflow-x: hidden !important;
+}
+
+//.card-body {
+//  overflow-x: hidden !important;
+//}
+
+.react-confirm-alert-overlay {
+  z-index: 99999 !important;
+}

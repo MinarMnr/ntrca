@@ -1,0 +1,5 @@
+export default {
+  PERMANENT: "FULL_TIME",
+  PARTTIME: "PART_TIME",
+  CONTRACTUAL: "CONTRACTUAL",
+};

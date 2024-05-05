@@ -1,0 +1,125 @@
+.dashboard{
+    padding: 0 20px;
+    // margin-top: 20px;
+}
+.dashboard .svg-inline--fa{
+    font-size: 2rem;
+    margin: 0 20px;
+}
+
+.table-settings .d-block .mb-5{
+    display: none!Important;
+}
+.dashboard .card-body .card-footer{
+    display: none!Important;
+}
+ .info-box-block {
+    padding: 20px;
+}
+.order-info-box svg {
+    font-size: 26px;
+    width: 26px;
+}
+.info-box {
+    border-radius: 5px;
+    color: #fff!important;
+    box-shadow: 0 1px 2.94px 0.06px rgb(4 26 55 / 16%);
+    border: none;
+    // margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.info-box h4 ,.info-box h2{
+    color: #fff!important;
+}
+.l-bg-purple {
+    background: linear-gradient(
+230deg, #759bff, #843cf6) !important;
+    color: #fff;
+}
+.l-bg-purple2 {
+    background: linear-gradient(to right, #834d9b, #d04ed6) !important;
+    color: #fff;
+}
+.l-bg-card1 {
+    background: linear-gradient(to left, #3a7bd5, #3a6073) !important;
+    color: #fff;
+}
+.l-bg-green-dark {
+    background: linear-gradient(
+135deg,#23bdb8 0,#65a986 100%) !important;
+    color: #fff;
+}
+.l-bg-green-dark-modified {
+    background: linear-gradient(0deg, #36ad6a 0%, #074d39 100%) !important;
+    color: #fff;
+  }
+.l-bg-orange {
+    background: linear-gradient(
+135deg, #ff8900, #c7460f) !important;
+    color: #fff;
+}
+.l-bg-orange2 {
+    background: linear-gradient(to right, #f7971e, #ffd200) !important;
+    color: #fff;
+}
+.l-bg-blue-dark {
+    background: linear-gradient(
+135deg,#289cf5,#4f8bb7) !important;
+    color: #fff;
+}
+.l-bg-blue-modified-dark {
+    background: linear-gradient(135deg, #144164, #062942) !important;
+    color: #fff;
+  }
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+.l-bg-green {
+    background: linear-gradient(to right, #56ab2f, #a8e063) !important;
+    color: #fff;
+}
+.mixed-chart {
+    border-color: #eaedf2 !important;
+    border: 1px;
+    border: 1px solid #eaedf2 !important;
+}
+.apexcharts-menu-icon {
+    display: none;
+}
+.dashboard .pspacer {
+    margin: 0;
+}
+.mixed-chart h6{
+    // background: linear-gradient(to left, #3a7bd5, #3a6073);
+    // color:white;
+        /* background: linear-gradient(to left, #3a7bd5, #3a6073); */
+        color: #3a6689;
+    
+}
+.card-title.h5 {
+    color: white;
+    font-size: 16px;
+}
+.info-box h1{
+    color: white;
+}
+.page-header {
+    margin-bottom: 30px;
+}
+._mt-50
+{
+    margin-top: -50px;
+}
+.page-header {
+    box-shadow: 0 1px 2.94px 0.06px rgb(4 26 55 / 16%);
+    box-shadow: 0 0.46875rem 2.1875rem rgb(90 97 105 / 10%), 0 0.9375rem 1.40625rem rgb(90 97 105 / 10%), 0 0.25rem 0.53125rem rgb(90 97 105 / 12%), 0 0.125rem 0.1875rem rgb(90 97 105 / 10%);
+    background: #fff;
+    padding: 20px 15px;
+    border-radius: 5px;
+}
+.page-header h5 {
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5e5e5;
+    font-weight: 600;
+}
